@@ -1,0 +1,402 @@
+/* #block{
+    width: 200px;
+    height: 100px;
+    background: green;
+}
+
+
+.pol{
+    background: #000;
+} */
+
+
+
+.wrapper{
+    max-height: 200px;
+    margin-top: 30px;
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+
+
+}
+
+
+.wrapper::-webkit-scrollbar{
+    width: 0;
+
+}
+
+
+.wrapper .item{
+    min-width: 160px;
+    height: 160px ;
+    line-height: 110px;
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, #ff65ad,#fd69f8,#578dff);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #ff6fb2,#f838f2,#78a2fd);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    margin-right: 2px;
+    border-radius: 20px;
+    margin-left: 25px;
+    font-size: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+
+}
+
+.wrapper .item1{
+    min-width: 160px;
+    height: 160px ;
+    line-height: 110px;
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, #3568c0,#0092bd,#0dcf86);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #3568c0,#0092bd,#0dcf86);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    margin-right: 2px;
+    border-radius: 20px;
+    margin-left: 25px;
+    font-size: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.wrapper .item3{
+    min-width: 160px;
+    height: 160px ;
+    line-height: 110px;
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, #5d4b8d,#c2668c,#f69e81);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #5d4b8d,#c2668c,#f69e81);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    margin-right: 2px;
+    border-radius: 20px;
+    margin-left: 25px;
+    font-size: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+
+}
+
+.wrapper .item2{
+    min-width: 160px;
+    height: 160px ;
+    line-height: 110px;
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, #ccb380,#c36852,#9e075d);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #ccb380,#c36852,#9e075d);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    margin-right: 2px;
+    border-radius: 20px;
+    margin-left: 25px;
+    font-size: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.matem{
+    width:90%;
+    height: 100px;
+    background: #000;
+    border-radius: 20px;
+    background-color: #4158D0;
+    background-image: #4158D0;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;padding-top: 50px;
+    
+
+}
+
+
+.nag{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+.kz{
+    width:90%;
+    height: 100px;
+    background: #000;
+    border-radius: 20px;
+    background-color:  #B721FF ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 32.5px;
+    text-align: center;padding-top: 50px;
+
+
+}
+.rus{
+    width:90%;
+    height: 100px;
+    background: #000;
+    border-radius: 20px;
+    background-color: #08AEEA;
+    background-image:  #2AF598 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 32.5px;
+    text-align: center;padding-top: 50px;
+
+
+}
+.eng{
+    width:90%;
+    height: 100px;
+    background: #000;
+    border-radius: 20px;
+    background-color: #FA8BFF;
+    background-image: #00ff6e ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 32.5px;
+    text-align: center;padding-top: 50px;
+
+
+
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 200px;
+    height: 100px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 0.1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+.text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 750;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.pon{
+    display: flex;
+}
+
+.swu{
+    width: 12%;
+    height: 50px;
+    background: -webkit-linear-gradient(90deg, #19339a,#bc3b7b,#e58660);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #19339a,#bc3b7b,#e58660);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    border-radius: 100%;
+    margin-top: 25px;
+    margin-left: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.61);
+}
+
+.text2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 25px;
+    margin-top: 1px;
+}
+
+.cart{
+    width: 90%;
+    height: 200px;
+    background: rgb(235, 235, 99);
+    display: flex;
+    margin-top: 40px;
+    margin-left: 20px;
+    border-radius: 30px;
+}
+
+.name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 10%;
+    margin-top: 60px;
+}
+
+.kub{
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.lop{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 7px;
+}
+
+.imp{
+    width: 30%;
+    height: 170px;
+    background: -webkit-linear-gradient(90deg, #0d0428,#ae4358,#fdce48);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(-90deg, #0d0428,#ae4358,#f7b500);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+    position: relative;  
+    top: 15px;
+    left: 90px;                                     
+    border-radius: 50px;
+}
+
+.no{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+
+.kol{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: 25px;
+}
+.tou{
+    border-radius: 30px;
+    margin-left: 25px;
+}
+
+
+.black{
+    width: 100%;
+    margin-top: 100px;
+    background: #161616;
+    height: 800px;
+}
+
+.TJB{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5%;
+    margin-top: 10px;
+}
+
+.kubs{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+
+.tj{
+    width: 90%;
+    height: 70px;
+    border-radius: 30px;
+    margin-top: 40px;
+    background: -webkit-linear-gradient(90deg, #413462,#444599,#075ad6);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #413462,#444599,#075ad6);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    display: flex;
+}
+
+
+.che{
+    margin-left:10px ;
+    margin-top: 7px;
+    width: 55px;
+    height: 55px;
+}
+
+
+.texto{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: white;
+    margin: 5%;
+   
+}
+
+.tj1{
+    width: 90%;
+    height: 70px;
+    border-radius: 30px;
+    bottom: 20px;
+    position: relative;
+    background: -webkit-linear-gradient(90deg, #36387d,#0092c3,#24dd8e);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #36387d,#0092c3,#24dd8e);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    display: flex;
+}
+
+.tj2{
+    width: 90%;
+    height: 70px;
+    border-radius: 30px;
+    bottom: 40px;
+    position: relative;
+    background: -webkit-linear-gradient(90deg, #907cf3,#008bc8,#60ded1);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #907cf3,#008bc8,#60ded1);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    display: flex;
+}
+
+.tj3{
+    width: 90%;
+    height: 70px;
+    border-radius: 30px;
+    bottom: 60px;
+    position: relative;
+    background: -webkit-linear-gradient(90deg, #cf0962,#7f3e91,#124a80);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(-90deg, #cf0962,#7f3e91,#124a80);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    display: flex;
+}
